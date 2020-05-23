@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import  axios from 'axios';
+import { Button, DatePicker, version } from "antd";
+import "antd/dist/antd.css";
 class Books extends Component {
   constructor(props) {
     super(props);
@@ -38,7 +40,7 @@ class Books extends Component {
           <h5 className="card-title">Title : {book.title}</h5>
           <p className="card-text"> Description : {book.description} Some quick example text to build on the card title and make up the bulk of the card's content.</p>
       <p className='card-text'>Price : {book.price}</p>
-          <a href="#" className="btn btn-primary">Add to cart</a>
+          <a href="#" ><Button type="primary">Add to cart</Button></a>
          </div>
        </div>)
     });
